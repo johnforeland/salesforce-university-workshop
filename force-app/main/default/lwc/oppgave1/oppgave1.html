@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Likes">
+        <lightning-button-icon icon-name="utility:like" onclick={handleClick}
+            class="slds-m-left_x-small slds-m-right_x-small">
+        </lightning-button-icon>
+        <template if:true={account.data}>{getCurrentLikes}</template>
+    </lightning-card>
+
+</template>
